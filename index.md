@@ -22,7 +22,7 @@ In `_config.yml` remember to specify your own data:
       twitter : username
 
 
->The theme should reference these variables whenever needed.
+> The theme should reference these variables whenever needed.
     
 ## Sample Posts
 
