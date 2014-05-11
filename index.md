@@ -26,8 +26,8 @@ The theme should reference these variables whenever needed.
     
 ## Sample Posts
 
-> This blog contains sample posts which help stage pages and blog data.
-> When you don't need the samples anymore just delete the `_posts/core-> samples` folder.
+<b>This blog contains sample posts which help stage pages and blog data.</b>
+**When you don't need the samples anymore just delete the `_posts/core-> samples` folder.**
 
     $ rm -rf _posts/core-samples
 
