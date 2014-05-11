@@ -11,9 +11,9 @@ pygments: true
 title :Hanwen's blog
 tagline: Site Tagline
 author :
-  name : Hanwen Cheng
-  email : heawen.cheng@gmail.com
-  github : 281494498
+  name : Name Lastname
+  email : blah@email.test
+  github : username
   twitter : username
   feedburner : feedname
 
