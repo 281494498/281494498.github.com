@@ -21,7 +21,8 @@ In `_config.yml` remember to specify your own data:
       github : username
       twitter : username
 
-> The theme should reference these variables whenever needed.
+
+>The theme should reference these variables whenever needed.
     
 ## Sample Posts
 
