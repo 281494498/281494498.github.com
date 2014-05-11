@@ -1,0 +1,16 @@
+---
+layout: post
+title: "webstorm use instruction"
+description: ""
+category: remarks
+tags: []
+---
+{% include JB/setup %}
+
+####find in project
+Edit -> find -> find in path *CTRL+H*
+-----------
+####function instruction 
+View Documentation *F2, CTRL+SHIFT+SPACE*
+Viewing Definition *Ctrl+Shift+I*.
+Viewing Inline Documentation *CTRL+Q*
