@@ -3,6 +3,7 @@ layout: post
 title: How to configure such page
 category: remarks
 tagline: with the code below
+tags: tutorial
 ---
 {% include JB/setup %}
 
