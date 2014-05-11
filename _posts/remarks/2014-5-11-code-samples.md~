@@ -1,7 +1,8 @@
 ---
-layout: page
-title: Welcome here!
-tagline: Growth record about Zugzug.de
+layout: post
+title: How to configure such page
+category: remarks
+tagline: with the code below
 ---
 {% include JB/setup %}
 
