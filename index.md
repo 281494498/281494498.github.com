@@ -5,5 +5,17 @@ tagline: Growth record about Zugzug.de
 ---
 {% include JB/setup %}
 
-#母亲节快乐
+##Project in May
 
+###using HTML template to generate pages
+- Like using [EJS](http://embeddedjs.com/), but it is just too simple to use, not recommeded by `single page web application p207`
+- using handlerbar.js(mustache.js), it cost about 120k, but with [hogan.js](http://twitter.github.io/hogan.js/), it only cost 2.5k 
+- last very popular way is to use jadeJs, which is defaultly embedded into node.js, also be supported natively by webstorm
+
+###Markdown is a good language to simply write something
+- markdown file is the most used text file in github,  which has a suffix of `md`
+- [Wikipedia](http://zh.wikipedia.org/wiki/Markdown) and [Github](https://help.github.com/articles/markdown-basics) have clear explanation, plus there are quick introduction [here](http://jianshu.io/p/q81RER)
+
+###Connect to MongoDB
+- It is very convenient to connect to it in Heroku's control panel
+- Use Robomongo to access to it, here is a good [tutorial](http://scotch.io/quick-tips/mongodb/connecting-to-mongodb-using-robomongo).
