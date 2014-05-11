@@ -1,8 +1,9 @@
 ---
 layout: post
-category : lessons
-tagline: "Supporting tagline"
-tags : [intro, beginner, jekyll, tutorial]
+title: "2014 5 11 use jekyll build github blog"
+description: ""
+category: zugzug
+tags: []
 ---
 {% include JB/setup %}
 

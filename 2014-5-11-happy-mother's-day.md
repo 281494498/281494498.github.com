@@ -1,7 +1,0 @@
----
-layout: page
-title: "2014 5 11 Happy Mother S Day"
-description: ""
-category: test
----
-{% include JB/setup %}
