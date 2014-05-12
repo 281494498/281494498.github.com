@@ -63,17 +63,18 @@ Here is a great [stackoverflow answer](http://stackoverflow.com/questions/157111
 
 ###Use Handlebars as html template in Express
 - use `npm install handlerbars --save` to install it
-- use `npm install consolidate --save` to install consolidate, where in express official API doc has recommended.  
+- use `npm install consolidate --save` to install consolidate, where in express official API doc has recommended.
+
 	Some template engines do not follow this convention, the consolidate.js library was created to map all of node's popular template engines to follow this convention, thus allowing them to work seemlessly within Express.
 
 then in our server.js
+
 	var engines = require('consolidate');
 	app.set('view engine', 'html')
 	app.engine('html', engines.handlebars, function(err, html) {
 	    if (err) throw err;
 	    console.log("successful load handlebars engine");
 	});
-
 	//or direct use 
 	//app.engine('html', engines.handlebars);
 
