@@ -51,14 +51,15 @@ When Passport authenticates a request, it parses the credentials contained in th
 Here is a great [stackoverflow answer](http://stackoverflow.com/questions/15711127/express-passport-node-js-error-handling) on error handling. It explains how to use done() and how to be more specific with your handling of a route.
 
 #####some problems:
-**how to signup with detailed information??**
+[how to signup with detailed information??](http://stackoverflow.com/questions/11784233/using-passportjs-how-does-one-pass-additional-form-fields-to-the-local-authenti)
+[how to make html as response without the index.html on the link path??](http://expressjs.com/api.html#app.engine)
 
 ###process.nextTick()
 	On the next loop around the event loop call this callback. This is not a simple alias to setTimeout(fn, 0), it's much more efficient
 ，process.nextTick()的意思就是定义出一个动作，并且让这个动作在下一个事件轮询的时间点上执行。防止了一些情况下因为时间顺序导致的一些动作已经执行完，下面的被忽略的情况，[这里](http://www.cnblogs.com/lengyuhong/archive/2013/03/31/2987745.html)的例子很好
 
 ###Express.render and sender
-how to make html as response without the index.html on the link path??
+
 
 emails
 nasser.jazdi@ias.uni-stuttgart.de
