@@ -80,5 +80,36 @@ then in our server.js
 
 here is a good [tutorial](http://expressjs-book.com/forums/topic/how-to-use-alternative-non-jade-template-engines-with-express/)
 
+<<<<<<< HEAD
+=======
+###How to use key value map in javascript
+No standard method available. You need to iterate and you can create a simple helper:
+
+	Object.prototype.getKeyByValue = function( value ) {
+	    for( var prop in this ) {
+	        if( this.hasOwnProperty( prop ) ) {
+	             if( this[ prop ] === value )
+	                 return prop;
+	        }
+	    }
+	}
+	
+	var test = {
+	   key1: 42,
+	   key2: 'foo'
+	};
+	
+	test.getKeyByValue( 42 );  // returns 'key1'
+	
+One word of caution: Even if the above works, its generally a bad idea to extend any host or native object's .prototype. I did it here because it fits the issue very well. Anyway, you should probably use this function outside the .prototype and pass the object into it instead.
+
+Another way is illustrate in this basic [article](http://mckoss.com/jscript/object.htm)  
+
+	var associativeArray = {};
+	associativeArray["one"] = "First";
+	associativeArray["two"] = "Second";
+	associativeArray["three"] = "Third";
+
+>>>>>>> 27bf4847d01cc0d78ee6a3fa84f8404b42071ffe
 emailshtml
-nasser.jazdi@ias.uni-stuttgart.de
+
