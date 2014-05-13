@@ -102,6 +102,7 @@ No standard method available. You need to iterate and you can create a simple he
 One word of caution: Even if the above works, its generally a bad idea to extend any host or native object's .prototype. I did it here because it fits the issue very well. Anyway, you should probably use this function outside the .prototype and pass the object into it instead.
 
 Another way is illustrate in this basic [article](http://mckoss.com/jscript/object.htm)  
+
 	var associativeArray = {};
 	associativeArray["one"] = "First";
 	associativeArray["two"] = "Second";
