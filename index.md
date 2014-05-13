@@ -80,7 +80,6 @@ then in our server.js
 
 here is a good [tutorial](http://expressjs-book.com/forums/topic/how-to-use-alternative-non-jade-template-engines-with-express/)
 
-<<<<<<< HEAD
 =======
 ###How to use key value map in javascript
 No standard method available. You need to iterate and you can create a simple helper:
@@ -110,6 +109,6 @@ Another way is illustrate in this basic [article](http://mckoss.com/jscript/obje
 	associativeArray["two"] = "Second";
 	associativeArray["three"] = "Third";
 
->>>>>>> 27bf4847d01cc0d78ee6a3fa84f8404b42071ffe
+
 emailshtml
 
