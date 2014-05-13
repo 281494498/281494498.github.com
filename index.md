@@ -55,6 +55,10 @@ Here is a great [stackoverflow answer](http://stackoverflow.com/questions/157111
 
 [how to make html as response without the index.html on the link path??](http://expressjs.com/api.html#app.engine)
 
+	app.get('/', function(req,res) {
+	  res.sendfile('public/index.html');
+	});
+
 ###process.nextTick()
 	On the next loop around the event loop call this callback. This is not a simple alias to setTimeout(fn, 0), it's much more efficient
 ，process.nextTick()的意思就是定义出一个动作，并且让这个动作在下一个事件轮询的时间点上执行。防止了一些情况下因为时间顺序导致的一些动作已经执行完，下面的被忽略的情况，[这里](http://www.cnblogs.com/lengyuhong/archive/2013/03/31/2987745.html)的例子很好
@@ -109,6 +113,30 @@ Another way is illustrate in this basic [article](http://mckoss.com/jscript/obje
 	associativeArray["two"] = "Second";
 	associativeArray["three"] = "Third";
 
+###Express Page 404 Error Handling
+
+basically 
+
+	app.use(function(req, res, next){
+	  res.status(404);
+
+	  // respond with html page
+	  if (req.accepts('html')) {
+	    res.render('404', { url: req.url });
+	    return;
+	  }
+
+	  // respond with json
+	  if (req.accepts('json')) {
+	    res.send({ error: 'Not found' });
+	    return;
+	  }
+
+	  // default to plain-text. send()
+	  res.type('txt').send('Not found');
+	});
+
+For more detail on 500 and so on see [here](https://github.com/visionmedia/express/blob/master/examples/error-pages/index.js)
 
 emailshtml
 
