@@ -138,5 +138,7 @@ basically
 
 For more detail on 500 and so on see [here](https://github.com/visionmedia/express/blob/master/examples/error-pages/index.js)
 
+###My questions about [comparison bewteen HTTP protocal and web socket](http://stackoverflow.com/questions/23642778/http-post-and-socket-io)
+
 emailshtml
 
