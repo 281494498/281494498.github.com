@@ -5,6 +5,8 @@ tagline: Growth record about Zugzug.de
 ---
 {% include JB/setup %}
 
+##from “I don’t care about performance, I just want it to work” to “thousands of people could be playing simultaneously, how do I scale?”
+
 ##Project in May
 ---------------
 ###using HTML template to generate pages
