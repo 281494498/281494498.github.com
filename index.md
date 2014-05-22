@@ -154,7 +154,7 @@ This object is useful for exposing request-level information such as the request
 	});
 
 ###Ligth box & Fancy box  
-use light box for some simple modal (min 9kb)
-while fancy box is suitable for image gallery because it could use mouse wheel to wheel over the pictures.(min 23kb)
-Here we may use [leanModal](http://leanmodal.finelysliced.com.au/) totally instead of lightbox, coz it is only 1kb :)
+use light box for some simple modal (min 9kb)  
+while fancy box is suitable for image gallery because it could use mouse wheel to wheel over the pictures.(min 23kb)  
+Here we may use [leanModal](http://leanmodal.finelysliced.com.au/) totally instead of lightbox, coz it is only 1kb :)  
 
