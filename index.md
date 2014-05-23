@@ -158,3 +158,22 @@ use light box for some simple modal (min 9kb)
 while fancy box is suitable for image gallery because it could use mouse wheel to wheel over the pictures.(min 23kb)  
 Here we may use [leanModal](http://leanmodal.finelysliced.com.au/) totally instead of lightbox, coz it is only 1kb :)  
 
+###JavaScript understanding
+####Funtion overloading
+for(var prop in obj){
+	obj[prop] = i //set the key value property pari for "prop: i"
+}
+
+Check if a argument is offered by 
+If(parameter === undefined)
+
+arguments used for present all the input variable of a function.
+
+It is a array, which is using by arguments[i]
+
+####hasOwnProperty()
+
+Which could be used for check the property in the object, but not the prototyped property.
+
+###The difference between setInterval() and setTimeout() is large.
+Should remember to use these two method to make asynchronous loading and heavy processing.
