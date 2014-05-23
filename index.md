@@ -177,3 +177,6 @@ Which could be used for check the property in the object, but not the prototyped
 
 ###The difference between setInterval() and setTimeout() is large.
 Should remember to use these two method to make asynchronous loading and heavy processing.
+
+The HTML5 attribute async and defer only affect to asychronous downloading
+But not affect to the asynchronous loading,
