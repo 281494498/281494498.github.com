@@ -8,7 +8,7 @@ description: ""
 ###from “I don’t care about performance, I just want it to work” to “thousands of people could be playing simultaneously, how do I scale?”
 
 ##Project in May
-=========
+
 ###using HTML template to generate pages
 - Like using [EJS](http://embeddedjs.com/), but it is just too simple to use, not recommeded by `single page web application p207`
 - using handlerbar.js(mustache.js), it cost about 120k, but with [hogan.js](http://twitter.github.io/hogan.js/), it only cost 2.5k 
