@@ -110,7 +110,7 @@ No standard method available. You need to iterate and you can create a simple he
 	
 One word of caution: Even if the above works, its generally a bad idea to extend any host or native object's .prototype. I did it here because it fits the issue very well. Anyway, you should probably use this function outside the .prototype and pass the object into it instead.
 
-Another way is illustrate in this basic [article](http://mckoss.com/jscript/object.htm)  
+Another way is illustrate in this basic [article](http://mckoss.com/jscript/object.htm)
 
 	var associativeArray = {};
 	associativeArray["one"] = "First";
@@ -156,12 +156,13 @@ This object is useful for exposing request-level information such as the request
 	});
 
 ###Ligth box & Fancy box  
-use light box for some simple modal (min 9kb)  
-while fancy box is suitable for image gallery because it could use mouse wheel to wheel over the pictures.(min 23kb)  
-Here we may use [leanModal](http://leanmodal.finelysliced.com.au/) totally instead of lightbox, coz it is only 1kb :)  
+use light box for some simple modal (min 9kb)
+while fancy box is suitable for image gallery because it could use mouse wheel to wheel over the pictures.(min 23kb)
+Here we may use [leanModal](http://leanmodal.finelysliced.com.au/) totally instead of lightbox, coz it is only 1kb :)
 
 ###JavaScript understanding
-####Funtion overloading
+
+###Funtion overloading
 for(var prop in obj){
 	obj[prop] = i //set the key value property pari for "prop: i"
 }
@@ -211,7 +212,7 @@ here is CSS way to hidden scrollbar
 	    height: 100%;
 	    padding-right: 15px;
 	    overflow: scroll;
-	}  
+	}
 see examples on [jsfiddle](http://jsfiddle.net/uB6Dg/1/) here
 
 ###URI.JS
