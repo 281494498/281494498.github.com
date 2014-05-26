@@ -8,7 +8,7 @@ tagline: Growth record about Zugzug.de
 ##from “I don’t care about performance, I just want it to work” to “thousands of people could be playing simultaneously, how do I scale?”
 
 ##Project in May
----------------
+=========
 ###using HTML template to generate pages
 - Like using [EJS](http://embeddedjs.com/), but it is just too simple to use, not recommeded by `single page web application p207`
 - using handlerbar.js(mustache.js), it cost about 120k, but with [hogan.js](http://twitter.github.io/hogan.js/), it only cost 2.5k 
@@ -158,3 +158,55 @@ use light box for some simple modal (min 9kb)
 while fancy box is suitable for image gallery because it could use mouse wheel to wheel over the pictures.(min 23kb)  
 Here we may use [leanModal](http://leanmodal.finelysliced.com.au/) totally instead of lightbox, coz it is only 1kb :)  
 
+###JavaScript understanding
+####Funtion overloading
+for(var prop in obj){
+	obj[prop] = i //set the key value property pari for "prop: i"
+}
+
+Check if a argument is offered by 
+If(parameter === undefined)
+
+arguments used for present all the input variable of a function.
+
+It is a array, which is using by arguments[i]
+
+####hasOwnProperty()
+
+Which could be used for check the property in the object, but not the prototyped property.
+
+###The difference between setInterval() and setTimeout() is large.
+Should remember to use these two method to make asynchronous loading and heavy processing.
+
+The HTML5 attribute async and defer only affect to asychronous downloading
+But not affect to the asynchronous loading
+
+###Full page animation fullpage.js
+	/* Overwriting [fullPage](https://github.com/alvarotrigo/fullPage.js).js tooltip color
+	* --------------------------------------- */
+	.fullPage-tooltip{
+		color: #AAA;
+	}
+	#fullPage-nav span, .fullPage-slidesNav span{
+		border-color: #AAA;
+	}
+	#fullPage-nav li .active span, .fullPage-slidesNav .active span{
+		background: #AAA;
+	}
+
+here is CSS way to hidden scrollbar
+
+	.outer{
+	    position: absolute;
+	    bottom: 0;
+	    top:0;
+	    width: 100%;
+	    overflow: hidden;
+	}
+	.inner{
+	    width: 100%;
+	    height: 100%;
+	    padding-right: 15px;
+	    overflow: scroll;
+	}  
+see examples on [jsfiddle](http://jsfiddle.net/uB6Dg/1/) here

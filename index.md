@@ -179,4 +179,37 @@ Which could be used for check the property in the object, but not the prototyped
 Should remember to use these two method to make asynchronous loading and heavy processing.
 
 The HTML5 attribute async and defer only affect to asychronous downloading
-But not affect to the asynchronous loading,
+But not affect to the asynchronous loading
+
+###Full page animation fullpage.js
+	/* Overwriting [fullPage](https://github.com/alvarotrigo/fullPage.js).js tooltip color
+	* --------------------------------------- */
+	.fullPage-tooltip{
+		color: #AAA;
+	}
+	#fullPage-nav span, .fullPage-slidesNav span{
+		border-color: #AAA;
+	}
+	#fullPage-nav li .active span, .fullPage-slidesNav .active span{
+		background: #AAA;
+	}
+
+here is CSS way to hidden scrollbar
+
+	.outer{
+	    position: absolute;
+	    bottom: 0;
+	    top:0;
+	    width: 100%;
+	    overflow: hidden;
+	}
+	.inner{
+	    width: 100%;
+	    height: 100%;
+	    padding-right: 15px;
+	    overflow: scroll;
+	}  
+see examples on [jsfiddle](http://jsfiddle.net/uB6Dg/1/) here
+
+###URI.JS
+learn it maybe for the further use
