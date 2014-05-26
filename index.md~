@@ -1,3 +1,11 @@
+---
+layout: page
+title: "Welcome Here"
+description: ""
+---
+{% include JB/setup %}
+
+
 ###Express Page 404 Error Handling
 
 basically 
