@@ -133,15 +133,8 @@ here through the judgement on the `s_login_proposed` , we decide what to do on t
             .bind('hashchange', onHashChange)
             .trigger('hashchange');
 
-###Modify the event listener in acct.js and shell.js
+###Modify the event listener in acct.js
 
-- in shell.js we transfer the function to acct.js
-
-	        zugzug.acct.configModule({
-		    set_login_anchor : setLoginAnchor
-		});
-
-- in acct.js bind the event handler to that function in shell.js
 	    onClickToggle = function(){
 		var set_login_anchor = configMap.set_login_anchor;
 		if(stateMap.position_type === 'open'){
