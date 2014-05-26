@@ -179,6 +179,7 @@ Which could be used for check the property in the object, but not the prototyped
 Should remember to use these two method to make asynchronous loading and heavy processing.
 
 The HTML5 attribute async and defer only affect to asychronous downloading
+
 But not affect to the asynchronous loading
 
 ###Full page animation fullpage.js
@@ -213,3 +214,26 @@ see examples on [jsfiddle](http://jsfiddle.net/uB6Dg/1/) here
 
 ###URI.JS
 learn it maybe for the further use
+=======
+But not affect to the asynchronous loading,
+
+###Difference between slice and substring
+Notes on substring():
+
+If start equals stop, it returns an empty string.
+If stop is omitted, it extracts characters to the end of the string.
+If start > stop, then substring will swap those 2 arguments.
+If either argument is greater than the string's length, either argument will use the string's length.
+If either argument is less than 0 or is NaN, it is treated as if it were 0.
+Notes on slice():
+
+If start equals stop, it returns an empty string, exactly like substring().
+If stop is omitted, slice extracts chars to the end of the string, exactly like substring().
+If start > stop, slice() will NOT swap the 2 arguments.
+If either argument is greater than the string's length, either argument will use the string's length, exactly like substring().
+If start is negative, slice() will set char from the end of string, exactly like substr() in Firefox. This behavior is observed in both Firefox and IE.
+If stop is negative, slice() will set stop to: (string.length – 1) – Math.abs(stop) (original value).
+
+In short, that is
+-slice和substring在正确使用的情况下用法相同
+-substring 会自动转换错误的前后顺序，会自动调整超出的范围，slice也会调整，但是遇到`负数`的情况，会有特殊处理。即从后往前数。
