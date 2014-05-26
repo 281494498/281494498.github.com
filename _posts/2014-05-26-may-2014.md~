@@ -89,6 +89,7 @@ then in our server.js
 here is a good [tutorial](http://expressjs-book.com/forums/topic/how-to-use-alternative-non-jade-template-engines-with-express/)
 
 =====
+
 ###How to use key value map in javascript
 No standard method available. You need to iterate and you can create a simple helper:
 
@@ -142,7 +143,8 @@ basically
 
 For more detail on 500 and so on see [here](https://github.com/visionmedia/express/blob/master/examples/error-pages/index.js)
 
-###My questions about [comparison bewteen HTTP protocal and web socket](http://stackoverflow.com/questions/23642778/http-post-and-socket-io)
+###My questions about 
+[comparison bewteen HTTP protocal and web socket](http://stackoverflow.com/questions/23642778/http-post-and-socket-io)
 
 ###Express req.locals
 Response local variables are scoped to the request, thus only available to the view(s) rendered during that request / response cycle, if any. Otherwise this API is identical to app.locals.
@@ -163,9 +165,9 @@ Here we may use [leanModal](http://leanmodal.finelysliced.com.au/) totally inste
 ###JavaScript understanding
 
 ###Funtion overloading
-for(var prop in obj){
-	obj[prop] = i //set the key value property pari for "prop: i"
-}
+	for(var prop in obj){
+		obj[prop] = i //set the key value property pari for "prop: i"
+	}
 
 Check if a argument is offered by 
 If(parameter === undefined)
