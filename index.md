@@ -5,8 +5,6 @@ description: ""
 ---
 {% include JB/setup %}
 
-=====
-
 ###How to use key value map in javascript
 No standard method available. You need to iterate and you can create a simple helper:
 
