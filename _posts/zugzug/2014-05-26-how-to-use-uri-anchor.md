@@ -11,10 +11,10 @@ tags: []
 
 the work flow will look like:
 
-	    onclick ---------> setAnchor
-		|		      |
-		|		      |
-        setPosition <--------- onHashChange
+	    onclick--------->setAnchor
+		|		    |
+		|		    |
+        setPosition<---------onHashChange
 ###Set up help function to use $.uriAnchor in shell.js
     changeAnchorPart = function(arg_map){
         var
