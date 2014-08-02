@@ -237,3 +237,84 @@ If stop is negative, slice() will set stop to: (string.length – 1) – Math.ab
 In short, that is
 -slice和substring在正确使用的情况下用法相同
 -substring 会自动转换错误的前后顺序，会自动调整超出的范围，slice也会调整，但是遇到`负数`的情况，会有特殊处理。即从后往前数。
+
+===
+###Mongoose 
+- The Validator only works on saving progress, one problem is that you won't know it is a internal database problem or a validation problem
+- Mongoose offer many ways for dealing with the [find](http://mongoosejs.com/docs/api.html#model_Model.find) method, like findOneAndRemove, findOneAndUpdate, here is the example
+- testing date method
+
+		Path.find({ start: /stuttgart/i }, 'date', function (err, docs) {
+			var myDate =  new Date();
+			docs = myDate;
+			console.log('time is'+docs.getTime()
+			+ 'day is' +docs.toDateString());
+		});
+
+expiring property could be set as:
+
+		// expire in 24 hours
+		new Schema({ createdAt: { type: Date, expires: 60*60*24 }});
+
+		// expire in 24 hours
+		new Schema({ createdAt: { type: Date, expires: '24h' }});
+
+		// expire in 1.5 hours
+		new Schema({ createdAt: { type: Date, expires: '1.5h' }});
+
+		// expire in 7 days
+		var schema = new Schema({ createdAt: Date });
+		schema.path('createdAt').expires('7d');
+
+###Socket.io
+####broadcasting
+how to update certain client or all client? how to handle socket parameter? `io.sockets.emit` or `io.emit` may add something like `of('/zugzug')`.
+
+		// socket is the *current* socket of the client that just connected
+		socket.emit('users_count', clients); 
+
+		//Instead, you want to emit to all sockets 
+		io.emit('users_count', clients);//
+
+		//sends a message to everyone except the socket that starts it
+		socket.broadcast.emit('users_count', clients);
+
+####find certain client
+setting a map for the online sockets with certain id, if need to send message to it. first check the map, and then send to that client
+
+		//add
+		chatterMap [user_map._id] = socket;
+
+		//check
+                if (!chatterMap[result_map._id]) {
+                    signIn(io, result_map, socket);
+                }
+
+		//find
+		if (chatterMap.hasOwnProperty(message.dest_id)) {
+		chatterMap[message.dest_id].emit('updatechat', message) ;//where the socket save
+		}
+
+		//delete
+		delete chatterMap[user_id];
+
+		//add some property to it
+		 socket.user_id = result_map._id;
+
+#### disconnect listener
+
+client side: socket.disconnect();
+server side : socket.on('disconnect', function(){})
+
+what about connect???
+
+####important change for express
+when you introduce server, must change the 
+		app.listen(8080);
+to this 
+		server.listen(8080);
+ 
+###Autosave with user input
+Main idea is to save the information according to the keyboard event of jquery, to the local cookies.
+- [Simple implementation](http://www.fayland.org/journal/AutoSave.html)
+- with [Sisyphus.js](http://sisyphus-js.herokuapp.com/)

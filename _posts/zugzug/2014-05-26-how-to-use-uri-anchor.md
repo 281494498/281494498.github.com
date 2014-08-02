@@ -213,4 +213,10 @@ and bind the DOM element with it `jqueryMap.$button.click(onClickToggle);`
 		configModule : configModule,
 		initModule : initModule
 	    }
+
+###How to modify with other anchor map
+
+- first need to change the anchor_schema_map in config_map in shell.js
+- then change the onHashChange method in shell.js
+- change the method which passed to acct.js (e.g setInfoAnchor)
 	
