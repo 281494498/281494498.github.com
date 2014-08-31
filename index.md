@@ -5,4 +5,4 @@ description: ""
 ---
 {% include JB/setup %}
 
-{% include html/main%}
+{% include html/main.html%}
